@@ -4,6 +4,7 @@ dist: xenial
 install:
   - git clone https://github.com/flutter/flutter.git -b beta
   - ./flutter/bin/flutter doctor
+  - ./flutter/bin/flutter config --enable-web
 script:
   - ./flutter/bin/flutter format --set-exit-if-changed lib test
   - ./flutter/bin/flutter analyze
