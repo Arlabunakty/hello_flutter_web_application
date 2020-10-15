@@ -3,17 +3,42 @@
 [![Build Status](https://travis-ci.com/Arlabunakty/hello_flutter_web_application.svg?branch=main)](https://travis-ci.com/Arlabunakty/hello_flutter_web_application)
 ![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)
 
-A new Flutter project.
+**The application** displays hello greeting message with changeable background on the click.
 
-## Getting Started
+## Live example
 
-This project is a starting point for a Flutter application.
+[Go to web page](https://arlabunakty.github.io/hello_flutter_web_application)
 
-A few resources to get you started if this is your first Flutter project:
+___Note: Github pages may have delays after deployments. Please, be patient =)___
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Building
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Install Flutter SDK version 1.22.1 using:
+
+```
+https://flutter.dev/docs/get-started/install
+```
+
+2. Follow instructions in section `Set up` on page:
+
+```
+https://flutter.dev/docs/get-started/web#set-up
+```
+
+3. To build
+
+```
+flutter build web
+```
+
+Target artifact is on path `build/web`.
+
+### Tests
+
+The validation can be triggered by executing the following command in the target project directory:
+```
+flutter test
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
