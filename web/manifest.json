@@ -1,0 +1,9 @@
+{
+    "name": "hello_flutter_web_application",
+    "short_name": "hello_flutter_web_application",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "Greeting application",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false
+}
