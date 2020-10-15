@@ -5,7 +5,7 @@ install:
   - git clone https://github.com/flutter/flutter.git -b beta
   - ./flutter/bin/flutter doctor
 script:
-  - ./flutter/bin/flutter format --set-exit-if-changed .
+  - ./flutter/bin/flutter format lib test --set-exit-if-changed .
   - ./flutter/bin/flutter analyze .
   - ./flutter/bin/flutter test
   - ./flutter/bin/flutter build web
