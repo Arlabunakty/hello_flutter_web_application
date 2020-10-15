@@ -1,3 +1,16 @@
+os: linux
+distro: bionic
+
+before_script:
+  - git clone https://github.com/flutter/flutter.git -b beta
+  - export PATH=`pwd`/flutter/bin:`pwd`/flutter/bin/cache/dart-sdk/bin:$PATH
+  - flutter config --enable-web
+  - flutter/bin/flutter doctor
+
 language: dart
 dart:
   - beta
+
+script:
+  - flutter analyze
+  - flutter test
