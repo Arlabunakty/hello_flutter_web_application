@@ -33,6 +33,12 @@ flutter build web
 
 Target artifact is on path `build/web`.
 
+4. To serve your app from localhost in Chrome, enter the following from the root:
+
+```
+flutter run -d chrome
+```
+
 ### Tests
 
 The validation can be triggered by executing the following command in the target project directory:
