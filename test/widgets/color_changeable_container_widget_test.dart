@@ -19,7 +19,7 @@ void main() {
         home: ColorChangeableContainerWidget(
             child: Text('test_text', key: childValueKey),
             colorProvider: mockedColorProvider,
-            defaultPageBackgroundColor: Colors.blue));
+            defaultBackgroundColor: Colors.blue));
   });
 
   group('ColorChangeableContainerWidget', () {

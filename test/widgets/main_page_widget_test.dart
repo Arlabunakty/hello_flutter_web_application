@@ -18,7 +18,7 @@ void main() {
           (Widget widget) =>
               widget is ColorChangeableContainerWidget &&
               widget.colorProvider == randomColorProvider &&
-              widget.defaultPageBackgroundColor.value == Colors.black.value);
+              widget.defaultBackgroundColor.value == Colors.black.value);
 
       await _initWidgets(tester);
 
