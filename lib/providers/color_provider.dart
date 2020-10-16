@@ -18,13 +18,14 @@ abstract class ColorProvider {
 class RandomColorProvider implements ColorProvider {
   /// The alpha layer value to represent the fully opaque color.
   static const _solidColorOpacity = 1.0;
-
+  /// The RGB max exclusive boundary for color interval generation.
+  static const _maxExclusiveOfRgbInterval = 0x1000000;
   /// A random number generator.
   final _random = Random();
 
   @override
   Color get() {
-    final randomRgbInt = _random.nextInt(Colors.black.value);
+    final randomRgbInt = _random.nextInt(_maxExclusiveOfRgbInterval);
     return Color(randomRgbInt).withOpacity(_solidColorOpacity);
   }
 }
