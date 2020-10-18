@@ -4,6 +4,6 @@ import 'package:hello_flutter_web_application/widgets/application_root_widget.da
 
 /// Entry point of the application to initiate application dependency and start it.
 void main() {
-  final randomColorProvider = RandomColorProvider();
+  final randomColorProvider = RandomColorProvider.uniform();
   runApp(ApplicationRootWidget(randomColorProvider));
 }

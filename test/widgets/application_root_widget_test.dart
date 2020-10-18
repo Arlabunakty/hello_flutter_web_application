@@ -5,7 +5,7 @@ import 'package:hello_flutter_web_application/widgets/application_root_widget.da
 import 'package:hello_flutter_web_application/widgets/main_page_widget.dart';
 
 void main() {
-  final randomColorProvider = RandomColorProvider();
+  final randomColorProvider = RandomColorProvider.uniform();
 
   testWidgets(
       'Application root widget shows Main page with the given color provider',

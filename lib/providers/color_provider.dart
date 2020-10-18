@@ -13,15 +13,22 @@ abstract class ColorProvider {
 
 /// Provides random color on each call.
 ///
-/// It's based on pseudo uniform distribution between RGB white and black
-/// colors inclusively. Returned color is not-transparent.
+/// It's based on pseudo random number generator. Returned color is not-transparent.
 class RandomColorProvider implements ColorProvider {
   /// The alpha layer value to represent the fully opaque color.
   static const _solidColorOpacity = 1.0;
+
   /// The RGB max exclusive boundary for color interval generation.
   static const _maxExclusiveOfRgbInterval = 0x1000000;
+
+  /// Creates [RandomColorProvider], which returns random color based on the given [Random] distribution.
+  RandomColorProvider(this._random);
+
+  /// Creates [RandomColorProvider], which returns random color based on uniform distribution.
+  RandomColorProvider.uniform() : _random = Random();
+
   /// A random number generator.
-  final _random = Random();
+  final Random _random;
 
   @override
   Color get() {

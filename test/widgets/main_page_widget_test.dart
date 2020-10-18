@@ -5,7 +5,7 @@ import 'package:hello_flutter_web_application/widgets/color_changeable_container
 import 'package:hello_flutter_web_application/widgets/main_page_widget.dart';
 
 void main() {
-  final randomColorProvider = RandomColorProvider();
+  final randomColorProvider = RandomColorProvider.uniform();
 
   Future _initWidgets(WidgetTester tester) async {
     await tester
