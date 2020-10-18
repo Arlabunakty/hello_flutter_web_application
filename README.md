@@ -7,7 +7,7 @@
 
 ## Live example
 
-[Go to web page](https://arlabunakty.github.io/hello_flutter_web_application)
+[Check the example in action](https://arlabunakty.github.io/hello_flutter_web_application)
 
 ___Note: Github pages may have delays after deployments. Please, be patient =)___
 
