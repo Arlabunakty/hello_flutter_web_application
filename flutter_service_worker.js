@@ -3,13 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "3bd0fc309bb235c53b6d2b022e6b1c18",
-"/": "3bd0fc309bb235c53b6d2b022e6b1c18",
-"main.dart.js": "94b7b738d82555d65ac36e910c01b4ee",
+  "index.html": "880a26eb3b5f09d74643f1bc7b643229",
+"/": "880a26eb3b5f09d74643f1bc7b643229",
+"main.dart.js": "99af980f9bc9e58c8ac7f0ea8d6e42f0",
 "version.json": "e080dff72089cf83502f62acbaca3846",
 "assets/FontManifest.json": "d751713988987e9331980363e24189ce",
 "assets/AssetManifest.json": "99914b932bd37a50b983c5e7c90ae93b",
-"assets/NOTICES": "2c7c4d6d65bddcf837151fcbfd47e9ef",
+"assets/NOTICES": "c7190c264545371a0c15a56ada9bde73",
 "manifest.json": "235a6662f7b074e488c60e448d475d13"
 };
 
@@ -154,7 +154,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
