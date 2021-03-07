@@ -16,11 +16,11 @@ class MainPageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-        child: ColorChangeableContainerWidget(
-            child: Center(
-                child:
-                    Text('Hey there', style: TextStyle(color: Colors.white))),
-            colorProvider: colorProvider,
-            defaultBackgroundColor: Colors.black));
+      child: ColorChangeableContainerWidget(
+          colorProvider: colorProvider,
+          defaultBackgroundColor: Colors.black,
+          child: Center(
+              child: Text('Hey there', style: TextStyle(color: Colors.white)))),
+    );
   }
 }

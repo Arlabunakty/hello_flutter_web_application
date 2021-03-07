@@ -17,9 +17,9 @@ void main() {
     mockedColorProvider = MockColorProvider();
     materialApp = MaterialApp(
         home: ColorChangeableContainerWidget(
-            child: Text('test_text', key: childValueKey),
             colorProvider: mockedColorProvider,
-            defaultBackgroundColor: Colors.blue));
+            defaultBackgroundColor: Colors.blue,
+            child: Text('test_text', key: childValueKey)));
   });
 
   group('ColorChangeableContainerWidget', () {
