@@ -3,13 +3,13 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "ee06aee7fed664c411ae3d3dcb891bb5",
-"/": "ee06aee7fed664c411ae3d3dcb891bb5",
-"main.dart.js": "95f0107235bcc82d71cbdfd925ef550d",
+  "index.html": "6b3def09655af2d545436e0d13d3b83d",
+"/": "6b3def09655af2d545436e0d13d3b83d",
+"main.dart.js": "0d56dc3759c57c9ca4bb3f73bb52e52b",
 "version.json": "e080dff72089cf83502f62acbaca3846",
 "assets/FontManifest.json": "d751713988987e9331980363e24189ce",
 "assets/AssetManifest.json": "99914b932bd37a50b983c5e7c90ae93b",
-"assets/NOTICES": "c7190c264545371a0c15a56ada9bde73",
+"assets/NOTICES": "74f193ddea90c68b11fd771f7839fe40",
 "manifest.json": "235a6662f7b074e488c60e448d475d13"
 };
 
@@ -28,7 +28,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
